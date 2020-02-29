@@ -3,7 +3,7 @@
 class Solution
 {
 public:
-    int sequence[1690];
+    static int sequence[1690];
 
     Solution()
     {
