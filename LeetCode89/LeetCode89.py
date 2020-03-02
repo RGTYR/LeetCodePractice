@@ -29,11 +29,13 @@ Explanation: We define the gray code sequence to begin with 0.
 			 Therefore, for n = 0 the gray code sequence is [0]. 
 """
 
+
 class Solution:
     def grayCode(self, n: int) -> List[int]:
         size = 1 << n
         result = []
-        
+
         for i in range(size):
-			result.
-        
+            result.append(i ^ (i >> 1))
+
+        return result
